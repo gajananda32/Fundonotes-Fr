@@ -1,0 +1,221 @@
+.OuterDiv{
+    max-width: 100%;
+    min-width: 20%;
+    min-height: 30%;
+    max-height: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.FirstInnerDiv{
+    border: 2px solid rgb(230, 230, 230);
+    height: 80%;
+    min-height: 30%;
+    max-width: 65%;
+    min-width: 10%;
+    padding: 40px 40px;
+    display:flex;
+    flex-direction: column;
+    border: 1.5px solid rgb(228, 224, 224);
+}
+.InnerDiv{
+    display:flex;
+    flex-direction: row;
+    max-width: 100%;
+    min-width: 10%;
+}
+.funDo{
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+.F{
+    color: #1a73e8;
+}
+.u{
+    color: red;
+}
+.n{
+    color: yellow;
+}
+.D{
+    color: #1a73e8;
+}
+.o{
+    color:green;
+}
+.oo{
+    color:red;
+}
+.myDiv{
+    margin: 10px;
+    width: auto;
+    //padding: 0px,20px
+}
+.nameDiv{
+    display:flex;
+    flex-direction: row;
+}
+.name{
+    margin-right: 10px;
+    height: auto;
+    
+}
+.namediv{
+    width:auto;
+    height: auto;
+}
+.username{
+  width: 100%;
+  height: auto; 
+}
+
+.matButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 25px;
+    padding: 5px 0px;
+    padding-left: 0px;
+}
+.login{
+    font-size: 16px;
+    font-style: normal;
+    margin-bottom: 16px;
+    padding-top: 5px;
+    border-radius: 4px;
+    color: #1a73e8;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: .25px;
+    outline: 0;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: inherit;
+    padding: 0;
+    text-align: left;
+    border: 0;
+    :hover{
+        background-color:#f2f5f9;
+        border-radius: 4px;
+    }
+}
+.mat-raised-button{
+    background-color:#1a73e8;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: none;
+    cursor: pointer;  
+    margin-left: auto; 
+    :hover {
+        background-color:#0248a5;
+        color: white;
+      }
+}
+.para{
+    font-size: 12px;
+}
+
+.buttondiv{
+    padding-bottom: 15px; 
+}
+.divButton{
+    font-size: 16px;
+    font-style: normal;
+    border-radius: 4px;
+    color: #1a73e8;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: .25px;
+    outline: 0;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: inherit;
+    padding:0px;
+    text-align: left;
+    border: 0;
+    :hover{
+        background-color:#f2f5f9;
+        border-radius: 4px;
+    }
+}
+
+.imageDiv{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 100%;
+    min-width: 20%;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 20px;
+}
+
+.image{
+    width: 230px;
+    height: 230px;
+}
+.paradiv{
+    display:flex;
+    align-items: center;
+    width: 70%;
+}
+@media only screen and (max-width :1120px){
+    .paradiv{
+       font-size: 10px;
+   }
+   .FirstInnerDiv{
+       height: auto;
+       width: auto;
+   }
+   .imageDiv{
+    width: auto;
+    height: auto;
+   }
+}
+@media only screen and (max-width :900px){
+    .imageDiv{
+        display: none;
+    }
+}
+@media only screen and (max-width :700px){
+    .nameDiv{
+        flex-direction: column;
+    }
+    .name{
+        width:100%;
+        margin-right: 0px;
+    }
+    .username{
+      width: 100%; 
+    }
+    .namediv{
+        width:100%
+    }
+    
+}
+@media only screen and (max-width :570px){
+    .NextButton{
+        margin-left: 110px;
+    }
+    .myDiv{
+        width: 100%;
+    }
+    .FirstInnerDiv{
+        border: 0px;
+    }
+    .loginButton{
+        width: auto;
+    }
+}

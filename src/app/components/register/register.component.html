@@ -1,0 +1,72 @@
+<div class="OuterDiv">
+  <div class="FirstInnerDiv">
+    <div class="funDo">
+      <b class="F">F</b>
+      <b class="u">u</b>
+      <b class="n">n</b>
+      <b class="D">d</b>
+      <b class="o">o</b>
+      <b class="oo">o</b>
+    </div>
+    <div class="InnerDiv">
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <div class="myDiv">
+          <span>
+            <h1>Create Your FunDoo Account</h1>
+          </span>
+          <div class="nameDiv">
+            <mat-form-field appearance="outline" class="name">
+                <mat-label>Firstname</mat-label>
+                <input matInput placeholder="" formControlName="firstname">
+                <mat-error>First name is required</mat-error>
+              </mat-form-field>
+                <mat-form-field appearance="outline" class="namediv">
+                  <mat-label>Lastname</mat-label>
+                  <input matInput placeholder="" formControlName="lastname">
+                  <mat-error>Last name is required</mat-error>
+                </mat-form-field>
+            </div>
+            <mat-form-field appearance="outline" class="username">
+              <mat-label>Username</mat-label>
+              <input matInput placeholder="" formControlName="email">
+              <mat-error>username is required</mat-error>
+            </mat-form-field>
+            <div class="para">
+              <p>You can use letters , numbers & periods </p>
+            </div>
+            <br>
+            <div class="nameDiv">
+              <mat-form-field appearance="outline" class="name">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="" formControlName="password">
+                <mat-error>Password is required</mat-error>
+              </mat-form-field>
+              <mat-form-field appearance="outline" class="namediv">
+                <mat-label>Confirm</mat-label>
+                <input matInput placeholder="" formControlName="confirmPassword">
+                <mat-error>Confirm Password is required</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="para">
+              <p>Use 8 or more characters with a mix of letters, numbers & symbols</p>
+            </div>
+            <div class="CheckBox">
+              <mat-checkbox class="check">Show password</mat-checkbox>
+            </div>
+            <div class="matButton">
+                <button class="login" routerLink="/login"><b>Sign in instead</b></button>
+                <button class="mat-raised-button" color="primary">Next</button>
+            </div>
+          </div>
+      </form>
+      <div class="imageDiv">
+        <div>
+          <img class="image" src="assets/logo.svg" alt="">
+        </div>
+        <div class="paradiv">
+          <p>One account. All of FunDoo working for you.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

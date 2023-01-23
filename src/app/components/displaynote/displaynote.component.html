@@ -1,0 +1,11 @@
+<div class="display">
+    <div class="notes" *ngFor="let data of noteList">
+        <p (click)="openDialog(data)">{{data.Title}}</p>
+        <div class="description">
+            <p (click)="openDialog(data)">{{data.descrption}}</p>
+            <div class="icon">
+                <app-icon>[notedesign]="data"</app-icon>
+            </div>
+        </div>
+    </div>
+</div>
